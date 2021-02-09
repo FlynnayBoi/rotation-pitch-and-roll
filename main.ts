@@ -1,0 +1,60 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showString("" + (input.rotation(Rotation.Pitch)))
+    basic.showString("" + (input.rotation(Rotation.Roll)))
+})
+basic.forever(function () {
+    if (input.rotation(Rotation.Pitch) < 45) {
+        music.playTone(294, music.beat(BeatFraction.Quarter))
+        music.playTone(294, music.beat(BeatFraction.Quarter))
+        music.playTone(587, music.beat(BeatFraction.Half))
+        music.playTone(440, music.beat(BeatFraction.Whole))
+        music.playTone(415, music.beat(BeatFraction.Half))
+        music.playTone(392, music.beat(BeatFraction.Half))
+        music.playTone(349, music.beat(BeatFraction.Half))
+        music.playTone(294, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Sixteenth))
+        music.playTone(262, music.beat(BeatFraction.Quarter))
+        music.playTone(262, music.beat(BeatFraction.Quarter))
+        music.playTone(587, music.beat(BeatFraction.Half))
+        music.playTone(440, music.beat(BeatFraction.Whole))
+        music.playTone(415, music.beat(BeatFraction.Half))
+        music.playTone(392, music.beat(BeatFraction.Half))
+        music.playTone(349, music.beat(BeatFraction.Half))
+        music.playTone(294, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Sixteenth))
+        music.playTone(247, music.beat(BeatFraction.Quarter))
+        music.playTone(247, music.beat(BeatFraction.Quarter))
+        music.playTone(587, music.beat(BeatFraction.Half))
+        music.playTone(440, music.beat(BeatFraction.Whole))
+        music.playTone(415, music.beat(BeatFraction.Half))
+        music.playTone(392, music.beat(BeatFraction.Half))
+        music.playTone(349, music.beat(BeatFraction.Half))
+        music.playTone(294, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Sixteenth))
+        music.playTone(233, music.beat(BeatFraction.Quarter))
+        music.playTone(233, music.beat(BeatFraction.Quarter))
+        music.playTone(587, music.beat(BeatFraction.Half))
+        music.playTone(440, music.beat(BeatFraction.Whole))
+        music.playTone(415, music.beat(BeatFraction.Half))
+        music.playTone(392, music.beat(BeatFraction.Half))
+        music.playTone(349, music.beat(BeatFraction.Half))
+        music.playTone(294, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Whole))
+    } else {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    }
+})
